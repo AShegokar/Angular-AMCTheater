@@ -1,0 +1,175 @@
+.my-reminder{
+    color: #fff;
+    padding-top:20px;
+}
+.my-reminder p{
+    font-size: 12px;
+}
+.my-reminder p:nth-of-type(1){
+    margin-bottom:0px;
+}
+.my-reminder button{
+    background: none;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    border-radius: 18px;
+    font-weight: 600;
+    color: #000;
+    outline: none;
+    width: 110px;
+    margin-right: 10px;
+}
+
+.my-reminder button:hover{
+    background-color: #000;
+    color:#fff;
+}
+.create-account{
+    height: 95vh;
+    position: absolute;
+    background-color: #000;
+    left: -20px;
+    right: -21px;
+    top: -50px;
+    color: #fff;
+    padding: 10px;
+}
+.status{
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #b8b8b8;
+    padding-bottom: 6px;
+}
+.status span{
+    float: left;
+}
+.status .status-insider{
+    margin-left: 10px;
+}
+.status-insider-acc{
+    margin-left: 5px;
+    float:left;
+}
+.status .status-insider h5{
+   margin:0px;
+   font-weight:bold;
+}
+.status .status-insider p{
+    font-size: 10px;
+    margin-top: 3px;
+}
+.email-part{
+    padding: 55px 10px 10px 10px;
+    float: left;
+    width: 100%;
+    height:100%;
+    background: -moz-linear-gradient(135deg, rgba(9,95,62,1) 0%, rgba(8,21,40,1) 47%, rgba(2,7,11,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(2,7,11,1)), color-stop(53%, rgba(8,21,40,1)), color-stop(100%, rgba(7,45,62,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(135deg, rgba(7,45,62,1) 0%, rgba(8,21,40,1) 47%, rgba(2,7,11,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(135deg, rgba(7,45,62,1) 0%, rgba(8,21,40,1) 47%, rgba(2,7,11,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(135deg, rgba(7,45,62,1) 0%, rgba(8,21,40,1) 47%, rgba(2,7,11,1) 100%); /* ie10+ */
+    background: linear-gradient(315deg, rgba(7,45,62,1) 0%, rgba(8,21,40,1) 47%, rgba(2,7,11,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02070b', endColorstr='#072d3e',GradientType=1 ); /* ie6-9 */
+}
+.celebrate .email-part{
+    padding-top: 55px;
+    float: left;
+    width: 100%;
+    height:100%;
+    background: linear-gradient(rgb(84, 72, 72) 42%, rgb(202, 96, 202) 112%);
+}
+.email-part span.glyphicon.glyphicon-envelope{
+    font-size: 50px;
+}
+.email-part h3{
+    font-weight:bold;
+}
+.email-part p{
+    margin-bottom: 0px;
+}
+.email-part form{
+    margin-top:20px;
+}
+.email-part form .mail-input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #777;
+    margin-bottom: 10px;
+    outline: none;
+    width:100%;
+}
+.email-part form .names{
+    display:flex;
+    margin-top: 20px;
+}
+
+.email-part form .names .mail-input:nth-of-type(1){
+    margin-right: 25px;
+}
+.create-account .next-btn{
+    position: absolute;
+    bottom: -29px;
+    right: 0px;
+    width: 100%;
+    padding: 15px;
+    background-color: #000;
+}
+.create-account .next-btn button{
+    float:right;
+}
+.create-account .email-part select{
+    color: #fff;
+    width: 100%;
+    padding: 6px 0px;
+    border: none;
+    background-color: initial;
+    border-bottom: 1px solid #777;
+    outline:none;
+}
+.create{
+    position: relative;
+    top:-885px;
+    transition: top 1s;
+}
+.celebrate-crete{
+    position: relative;
+    top:-885px;
+    transition: top 1s;
+}
+.style1{
+    top:0px;
+}
+.style2{
+    top:0px;
+}
+.email-part img{
+    width:50px;
+}
+.select-arrow{
+    position: relative;
+}
+.select-arrow:after{
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 5px 0 5px;
+    border-color: #fff transparent transparent transparent;
+    right: 5px;
+    top: 12px;
+    pointer-events: none;
+}
+@media screen and (max-width:768px){
+    .my-reminder{
+        color: #fff;
+    }
+    .reminder-inner{
+        text-align: center;
+    }
+    .my-reminder button{
+        display: block;
+        margin: auto auto 10px auto;
+    }
+}

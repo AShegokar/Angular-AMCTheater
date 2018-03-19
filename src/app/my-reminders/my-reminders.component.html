@@ -1,0 +1,79 @@
+<div class="col-md-12 col-sm-12 col-xs-12 my-reminder">
+  <div class="reminder-inner" [hidden]="showsinIn">
+    <img src="https://cdn.amctheatres.com/static/images/my-amc/logo-amc-stubs-generic.png">
+    <h5>MEMBER EXCLUSIVE</h5>
+    <p>sign in with your AMC Stubs account to this</p>
+    <p>feature.If dont have one, you can join for free</p>
+    <button>SIGN IN</button>
+    <button (click)="joinNow()">JOIN NOW</button>
+  </div>
+
+  <div class="create" [ngClass]="{'style1':createaccount}">
+  <div class="create-account"  >
+    <div class="status">
+
+      <div class="status-insider" (click)="goToReminder()">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <div class="status-insider-acc">
+          <h5>Create Account</h5>
+          <p>AMC STATUS INSIDER - STEP 1 OF 5</p>
+        </div>
+      </div>
+    </div>
+    <div class="email-part">
+      <div>
+        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+        <h3>Let's Stay in Touch</h3>
+        <p>Email aren't just for order confirmations</p>
+        <p>entering your email.you'll get access to news</p>
+        <p>offers and more</p>
+      </div>
+      <form>
+        <input type="text" placeholder="Email" class="mail-input">
+        <div class="names">
+          <input type="text" placeholder="First Name" class="mail-input">
+          <input type="text" placeholder="Last Name" class="mail-input">
+        </div>
+      </form>
+    </div>
+    <div class="next-btn">
+      <button (click)="gotToNext()">Next</button>
+    </div>
+  </div>
+</div>
+
+<div class="celebrate-crete" [ngClass]="{'style2':celebratewith}">
+  <div class="create-account celebrate">
+    <div class="status">
+
+      <div class="status-insider" (click)="gotoPrevious()">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <div class="status-insider-acc">
+            <h5>Create Account</h5>
+            <p>AMC STATUS INSIDER - STEP 2 OF 5</p>
+        </div>
+      </div>
+    </div>
+    <div class="email-part">
+      <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGelGqySXpkdsEkdaf8CTBWYD5djTykNBLldQBXNGZmgpLHtv9">
+        <h3>Celebrate with Us</h3>
+        <p>Email aren't just for order confirmations</p>
+        <p>entering your email.you'll get access to news</p>
+        <p>offers and more</p>
+      </div>
+      <form>
+        <div class="select-arrow">
+          <select>
+            <option>Birthday</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="next-btn">
+      <button>Next</button>
+    </div>
+  </div>
+  </div>
+
+</div>

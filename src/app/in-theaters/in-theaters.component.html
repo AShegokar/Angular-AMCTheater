@@ -1,0 +1,48 @@
+<div class="movie-content">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-3" *ngFor="let movie of nowPlayingMovies;">
+          <div class="row">       
+            <img src="{{movie.media.posterDynamic}}" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="join-overlay col-xs-12" [hidden]="mainpopup">
+        <div class="row">
+            <img src="https://cdn.amctheatres.com/production/2/movies/45900/45873/HeroDesktopDynamic/40143.jpg">
+          <div class="inner-overlay">
+          <div class="col-xs-12">
+              <div class="row">
+                  <span class="glyphicon glyphicon-remove pull-right" aria-hidden="true"(click)="close()"></span>
+              </div>
+          </div>
+          <div class="col-xs-12" >
+              <div class="row">
+                <div class="col-xs-12">
+                      <p>Level Upto a premiere & score a</p>
+                      <p>FREE x-Large Fountain Drink</p>
+                      <button>Join Now</button>
+                      <a href="#">Learn More</a>
+                  </div> 
+              </div>
+          </div>
+      </div>
+
+        </div>
+        <div class="remind-overlay" [hidden]="showOverlay">
+          <div class="remind-overlay-inner">
+                <div>
+                      <span>Remind Me Later</span>
+                </div>
+                <div>
+                   
+                    <span (click)="nothanks()">No Thanks</span>
+                </div>
+                <div>
+                    <span>Cancel</span>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>

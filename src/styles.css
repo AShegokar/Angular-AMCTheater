@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color:#000;
+}
+.movie-app{
+    max-width:1280px;
+    width:100%;
+    margin: auto;
+    padding: 10px 0px;
+}
